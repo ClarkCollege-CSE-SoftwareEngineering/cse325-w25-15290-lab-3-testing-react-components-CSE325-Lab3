@@ -196,7 +196,7 @@ export interface TaskItemProps {
 
 export function TaskItem({ task, onToggle, onDelete }: TaskItemProps) {
   return (
-
+    <div>
       <input
         type="checkbox"
         id={`task-${task.id}`}
@@ -220,8 +220,8 @@ export function TaskItem({ task, onToggle, onDelete }: TaskItemProps) {
         }}
       >
         Delete
-
-
+      </button>
+  </div>
   );
 }
 ```
